@@ -1,0 +1,25 @@
+# Space control　栗本さんFB
+
+- 全社CMの最大化
+    - 時間軸
+    - 中長期的にCargo Portfolioを考えてスペースを埋めるみたいな観点はあるか？
+    - Full and down
+    - サービスにとってはWeightが関連している
+- APの正確性をどうあげていくか
+- 正確のAPの定義は？（柴田さん）
+- Networkとの棲み分けは？
+    - WishはM&Cから投げているかDetailはできていない
+    - Networkは交渉に特化
+- Monthlyでお客さんとReviewMeeting
+- 誰がどのタイミングで指示だすかルール化するべく
+- Speceのジャグリング
+- GD4のBooking acceptanceをする前にLate
+    - GD4が宙に浮いている
+- GD4をどうスムーズにとっていくか
+- APとNon AP
+- TransPacificはShort termでもAPをもたせてる
+- APの定義づけをしっかりする
+    - 各Tradeごとに異なった理解にならないようにする
+- Non AP＝Spot/Shortならばそう明確にする
+    - そうでないとTPのAPはNon AP？
+-

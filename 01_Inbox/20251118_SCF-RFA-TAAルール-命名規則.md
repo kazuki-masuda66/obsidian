@@ -1,0 +1,28 @@
+# SCF-RFA-TAAルール-命名規則
+
+## 概要
+SC/RFA/TAAのルールに関するメモ。Standard SC Formatの命名規則、Single YearとMulti Yearの違い、NA signed GKA SCsのOffice Prefixについて記録しています。
+
+## 内容
+
+### Standard SC Format: 10 Alphanumeric Characters
+
+#### 1. Single Year (validty = less than 12 months)
+- `<Office Prefix>` (3 Characters) + `<Sequence>` (4 digits) + `<N>VO or <B>CO` + `<Year SC Created>` (2 digits)
+- Example: NYC0360N21
+
+#### 2. Multi Year (validty = more than 12 months)
+- `<Office Prefix>` (3 Characters) + `<Sequence>` (4 digits) + `<N>VO or <B>CO` + `<Year SC Created>` (2 digits)
+- Example: NYC0360N21
+
+### Note: For NA signed GKA SCs, the <Office Prefix> will be GCM
+
+### Previous Logic:
+- SCのロジック by NA
+- （画像資料参照）
+
+## 次アクション
+- [ ] 関連ノートにリンク（[[SCF]]、[[RFA]]、[[TAA]]、[[命名規則]]など）
+- [ ] 必要に応じてMemory Noteに変換
+
+#inbox #one #scf #rfa #taa #naming-rules
