@@ -82,5 +82,5 @@ Management meeting（管理会議）のメモ。週次のスペース状況、�
 - [ ] 関連ノートにリンク（[[Management Meeting]]、[[スペース状況]]、[[マーケット動向]]など）
 - [ ] 必要に応じてMemory Noteに変換
 
-#management-meeting #space-situation #market-trends
+#management-meeting #space-situation #market-trends #work/one #work/one/afla
 

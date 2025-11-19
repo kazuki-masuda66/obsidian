@@ -86,5 +86,5 @@ Summaryファイルの週次更新方法について記録したメモ。週次�
 - [ ] 関連ノートにリンク（[[Summaryファイル]]、[[週次更新]]、[[Looker]]など）
 - [ ] 必要に応じてMemory Noteに変換
 
-#summary-file #weekly-update #space-control
+#summary-file #weekly-update #space-control #work/one #work/one/afla
 

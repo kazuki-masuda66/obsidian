@@ -67,9 +67,10 @@ Tiger Filing時にRequest Officeで選択されたSales RepがSC/RFA SVC Scope S
 ### ONEQuoteで入ったBKGの場合
 SC/RFA Customer Code(=BKG Party)に紐付くSales Rep code（Customer Integration上の情報）がSC/RFA SVC Scope Sales Repに引用され、そちらを参照することになりますので、Customer Integration上でSales person（個人名）を紐付けて頂いている場合は各営業課に実績が正しく振り分けられます。
 
-## 次アクション
-- [ ] 関連ノートにリンク（[[CGM]]、[[営業予算]]、[[Dynamic CGM]]など）
-- [ ] 必要に応じてMemory Noteに変換
+## 関連ノート
+- [[CGMとAPの関係-Country-Goal-Managementとアカウントプラン]]
+- [[APとは何か-Account-Planの基本概念]]
+- [[Sales-TargetとAPの比較-営業目標と計画の整合性]]
 
-#cgm #sales-budget #dynamic-cgm
+#cgm #sales-budget #dynamic-cgm #work/one #work/one/afla
 

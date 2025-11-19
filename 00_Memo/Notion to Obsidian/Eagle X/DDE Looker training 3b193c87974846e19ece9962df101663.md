@@ -1,3 +1,0 @@
-# DDE Looker training
-
--

@@ -1,3 +1,0 @@
-# Eagle X internal meeting
-
--

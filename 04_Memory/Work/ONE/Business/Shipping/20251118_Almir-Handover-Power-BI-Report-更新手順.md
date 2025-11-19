@@ -76,5 +76,5 @@ Almir Handover（Power BI report）の更新手順について記録したメモ
 - [ ] 関連ノートにリンク（[[Power BI Report]]、[[eeSea]]、[[Tableau]]、[[Alphaliner]]など）
 - [ ] 必要に応じてMemory Noteに変換
 
-#power-bi #eeSea #tableau #alphaliner
+#power-bi #eeSea #tableau #alphaliner #work/one #work/one/afla
 

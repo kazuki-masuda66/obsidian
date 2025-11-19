@@ -67,5 +67,5 @@ AP（Account Plan）のUpdate方法について記録したメモ。最新のVVD
 - [ ] 関連ノートにリンク（[[AP]]、[[Master Constraint Table]]、[[ENSENADA study]]など）
 - [ ] 必要に応じてMemory Noteに変換
 
-#ap #master-constraint-table #account-plan
+#ap #master-constraint-table #account-plan #work/one #work/one/afla
 
