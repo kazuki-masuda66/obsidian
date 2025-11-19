@@ -1,0 +1,83 @@
+﻿# 用語集-海運用語集と物流Q&A-デマレージ-ディテンション-Surcharge
+
+## 概要
+用語集に関するメモ。海運用語集へのリンク、物流Q&Aへのリンク、輸入貨物のコンテナのフリータイム、デマレージ、ディテンション、Surcharge、PSS、VGM、laden、Wayport、Liner、Tramper、MG、Drayage、FCL、LCL、Van pool、CFS、スタッフィング、アンスタッフィング、FOC、TM、RM、ALC Shift impact、VMS adjustment、BSA、VVD、BAUについて記録されています。
+
+## 内容
+
+### 海運用語集へのリンク
+- [海運用語集（英語／略語） | JSA 社団法人日本船主協会](https://www.jsanet.or.jp/glossary/index_e.html)
+
+### 物流Q&Aへのリンク
+- [物流Q&A](http://www.hokkai-unyu.co.jp/qa/glossary.html#atoz)
+
+### 輸入貨物のコンテナのフリータイム（FREE TIME）、デマレージ（DEMURRAGE）とディテンション（DETENTION）とは
+- [コンテナのデマレージとディテンション・チャージとの違い：日本 | 貿易・投資相談Q&A - 国・地域別に見る](https://www.jetro.go.jp/world/qa/04A-010920.html)
+
+### デマレージとは
+- **「超過保管料」のことで、陸揚げされたコンテナがフリータイムを過ぎても貨物を引き取りに来ずCYに引き続き留置された場合に課せられます。**
+
+### ディテンションとは
+- **「返却延滞料」のことで、CYから納入先にコンテナを運搬し、コンテナ保管場（Van Pool）に返却されるまでの日数がフリータイムを超過した場合に課せられます。**
+
+### Surchargeにもいろんな種類がある
+- **Surchargeにもいろんな種類がある**
+- **PSS=Peak Season Surcharge**
+- **実は売上の何割かは占めている**
+
+### VGMとは
+- **総重量確定情報 (VGM) とは荷敷き材や補強材を含む、貨物を積載したコンテナの総重量です。**
+- **laden：積んだ**
+
+### Wayport
+- **航路の両端の地域ではなく、運航途中の寄港地のこと。**
+
+### LinerとTramper
+- **Liner:定期船、　Tramper:不定期船**
+
+### MG
+- **MG:Motor generator set→発電機セット**
+
+### Drayage
+- **ドレージとは、コンテナを陸上輸送すること。 海外から輸送されたコンテナから、荷物を出さずにそのまま目的地に陸送する。 そうすることで、スピーディーかつローコストで荷物を届けることができる。**
+
+### FCLとLCL
+- **FCL貨物：Full container Load→コンテナ単位の貨物**
+- **LCL貨物：Less Than Container Load→コンテナにならない小口の貨物**
+
+### Van pool
+- **空コンテナ置き場**
+
+### CFSでコンテナに貨物を詰め込むこと
+- **スタッフィング、バン詰め、バンニング**
+- **↔アンスタッフィング、バン出し、デバンニング**
+
+### FOC
+- **便宜置籍船**
+
+### TMとRM
+- **TM=Trade management**
+- **RM=Revenue management**
+
+### ALC　Shift impactとは？
+- **Allocation shift imapct**
+
+### VMS adjustmentとは
+- **VMS：船が来ない欠便**
+
+### BSA
+- **BSA＝船が普通に来たときにONEがもっているスペースのこと**
+- **Basic slot allocation**
+
+### VVDとは
+- **船ごと今回はこのナンバー番号を振っている**
+
+### BAU
+- **BAU:Business As Usual いつも通り、普段通り、従来通り、通常営業**
+
+## 次アクション
+- [ ] 関連ノートにリンク（[[用語集]]など）
+- [ ] 必要に応じてMemory Noteに変換
+
+#glossary
+

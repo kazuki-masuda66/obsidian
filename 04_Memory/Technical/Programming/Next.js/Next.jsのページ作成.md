@@ -1,4 +1,4 @@
-# Next.jsのページ作成
+﻿# Next.jsのページ作成
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -463,5 +463,4 @@ export default async function Page({
 
 ---
 tags: [nextjs, pages, app-router, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

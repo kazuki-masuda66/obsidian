@@ -1,4 +1,4 @@
-# Next.jsのAPI Routes
+﻿# Next.jsのAPI Routes
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -227,5 +227,4 @@ export async function POST(request: Request) {
 
 ---
 tags: [nextjs, api-routes, backend, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

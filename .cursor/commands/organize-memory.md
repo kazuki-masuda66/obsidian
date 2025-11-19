@@ -23,9 +23,9 @@
 04_Memoryフォルダ内の知識ノートを重複なく、綺麗に整理してください。
 
 引数:
-- カテゴリ（省略可）: 整理対象のカテゴリ（AI、Business、Education、Personal、Technical）
+- カテゴリ（省略可）: 整理対象のカテゴリ（AI、Business、Work、Education、Personal、Technical）
   - 省略時は全カテゴリを整理
-  - 例: `/organize-memory AI` または `/organize-memory Technical`
+  - 例: `/organize-memory AI` または `/organize-memory Work`
 
 実行内容:
 
@@ -274,7 +274,8 @@
 - サブフォルダが存在しない場合は作成
 - ファイル名の日付接頭辞は保持（必要に応じて）
 - 整理後、必要に応じてメタデータ（タグ・リンク）を更新
-- **04_Memory** のサブフォルダ構成（AI/、Business/、Education/、Personal/、Technical/）を厳守
+- **04_Memory** のサブフォルダ構成（AI/、Business/、Work/、Education/、Personal/、Technical/）を厳守
+- **Work/** への移動時は、特定の会社・組織に関連する知識かどうかを判断（ONE社関連は `Work/ONE/` 配下）
 - 判断に迷う場合は、ユーザーに確認を求める
 
 ## 🔗 関連コマンド

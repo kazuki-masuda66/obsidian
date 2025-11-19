@@ -1,4 +1,4 @@
-# TypeScript基礎
+﻿# TypeScript基礎
 
 ## 概要
 TypeScript基礎に関する知見を整理する。 TypeScriptは型安全性で大規模開発を支える。 基礎機能を体系的に押さえると応用も楽になる。
@@ -18,4 +18,4 @@ TypeScript基礎に関する知見を整理する。 TypeScriptは型安全性�
 - [ ] Dockerfileにコメントで根拠を記録し、変更理由を残す。
 ## メモ
 - 更新日: 2025-11-13
-- 参照タグ: #technical
+- 参照タグ: #technical`n`n#memory #technical

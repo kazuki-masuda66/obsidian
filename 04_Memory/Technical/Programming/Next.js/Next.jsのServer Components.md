@@ -1,4 +1,4 @@
-# Next.jsのServer Components
+﻿# Next.jsのServer Components
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -305,5 +305,4 @@ const apiKey = process.env.NEXT_PUBLIC_API_KEY; // クライアントに公開�
 
 ---
 tags: [nextjs, server-components, app-router, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

@@ -14,9 +14,7 @@
 ```markdown
 1. 05_Output/Areas/Content-Creation/YouTube-Channel/00-channel-strategy.md
 2. 05_Output/Areas/Business/Survibe-AI/00-strategy.md
-3. 04_Memory/Business/Marketing/content-marketing-strategy.md
-4. 04_Memory/Business/Marketing/social-media-strategy.md
-5. 04_Memory/Personal/Productivity/（関連ファイル）
+3. 04_Memory/Personal/Productivity/（関連ファイル）
 ```
 
 ### 2. 関連情報の収集
@@ -44,7 +42,6 @@ YouTubeチャンネル向けの動画コンテンツアイデア集
 
 ## 関連ノート
 - [[../../00-channel-strategy.md]]
-- [[../../../04_Memory/Business/Marketing/content-marketing-strategy.md]]
 
 #youtube #コンテンツアイデア #あきらパパ
 ```
@@ -71,7 +68,7 @@ X（旧Twitter）での発信向けのコンテンツアイデア集
 - スレッド企画
 
 ## 関連ノート
-- [[../../04_Memory/Business/Marketing/social-media-strategy.md]]
+- [[../../04_Memory/Business/Community-Building/]]（コミュニティ運営関連）
 
 #x #twitter #コンテンツアイデア #あきらパパ
 ```
@@ -153,7 +150,6 @@ Survibe AIトレーニングブートキャンプ向けのコンテンツアイ�
 
 ## 関連ノート
 - [[../../04_Memory/Education/Curriculum-Design/]]
-- [[../../04_Memory/Business/Marketing/content-marketing-strategy.md]]
 
 #survibe_ai #ai #教育 #コンテンツアイデア #あきらパパ
 ```

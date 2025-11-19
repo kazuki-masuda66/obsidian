@@ -51,11 +51,20 @@
 3. 改善案を提示
 4. ユーザーの承認を待つ
 5. 承認後、`04_Memory/`の適切なサブフォルダに移動
-   - AI/（AI関連）
-   - Business/（ビジネス関連）
-   - Education/（教育関連）
+   - AI/（AI関連・汎用的）
+   - Business/（ビジネス関連・汎用的）
+   - Work/（特定の会社・組織関連）
+     - ONE/（ONE社関連）
+       - Business/Shipping/（AFLA関連の業務知識）
+       - DX/（DX関連）
+         - Taskforce/（DX taskforce）
+         - Eagle-X/（Eagle-Xプロジェクト）
+         - Systems/（システムツール）
+         - Digital-Marketing/（デジタルマーケティング）
+       - Training/（研修・教育コンテンツ）
+   - Education/（教育関連・汎用的）
    - Personal/（個人関連）
-   - Technical/（技術関連）
+   - Technical/（技術関連・汎用的）
 6. 該当するMOC（Map of Contents）を更新
 
 関連プロンプト: [[08_prompts/01_整理系/20250113_Memory Note作成支援.md]]

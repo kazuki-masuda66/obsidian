@@ -1,4 +1,4 @@
-# Next.jsのプロジェクト構造
+﻿# Next.jsのプロジェクト構造
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -257,5 +257,4 @@ export default function RootLayout({
 
 ---
 tags: [nextjs, project-structure, app-router, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

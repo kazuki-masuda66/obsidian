@@ -1,4 +1,4 @@
-# Python基礎
+﻿# Python基礎
 
 ## 概要
 Python基礎に関する知見を整理する。 Pythonは読みやすさと豊富なライブラリが魅力。 基礎機能を体系的に押さえると応用も楽になる。
@@ -18,4 +18,4 @@ Python基礎に関する知見を整理する。 Pythonは読みやすさと豊�
 - [ ] Dockerfileにコメントで根拠を記録し、変更理由を残す。
 ## メモ
 - 更新日: 2025-11-13
-- 参照タグ: #technical
+- 参照タグ: #technical`n`n#memory #technical

@@ -1,4 +1,4 @@
-# Next.jsのデータフェッチング
+﻿# Next.jsのデータフェッチング
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -273,5 +273,4 @@ const apiKey = process.env.API_KEY; // NEXT_PUBLIC_は不要
 
 ---
 tags: [nextjs, data-fetching, server-components, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

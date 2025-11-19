@@ -1,4 +1,4 @@
-# Next.jsとは何か
+﻿# Next.jsとは何か
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -132,5 +132,4 @@ import Image from 'next/image';
 
 ---
 tags: [nextjs, react, framework, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

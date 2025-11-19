@@ -1,4 +1,4 @@
-# Obsidianの特徴と機能の深層分析
+﻿# Obsidianの特徴と機能の深層分析
 
 ## 概要
 Obsidianがなぜ多くの人に受け入れられているのか、その本質的な理由と機能を深掘りした調査結果。ペルソナ分析、痛みの解決、深層心理分析まで含む包括的な分析。
@@ -73,5 +73,4 @@ Obsidianが刺さる本質は3つのレイヤー：
 - [ ] 深層心理分析をマーケティングに活用
 - [ ] 競合比較をセミナーで説明する際の資料として使用
 
-#inbox #obsidian #research #analysis #persona #psychology
-
+#obsidian #research #analysis #persona #psychology`n#memory #business

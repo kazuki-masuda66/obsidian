@@ -1,4 +1,4 @@
-# Js基礎
+﻿# Js基礎
 
 ## 概要
 Js基礎に関する知見を整理する。 JavaScriptの基礎はスコープ・非同期・プロトタイプチェーン。
@@ -18,4 +18,4 @@ Js基礎に関する知見を整理する。 JavaScriptの基礎はスコープ�
 - [ ] Dockerfileにコメントで根拠を記録し、変更理由を残す。
 ## メモ
 - 更新日: 2025-11-13
-- 参照タグ: #technical
+- 参照タグ: #technical`n`n#memory #technical

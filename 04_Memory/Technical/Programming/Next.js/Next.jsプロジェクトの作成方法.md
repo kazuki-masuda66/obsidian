@@ -1,4 +1,4 @@
-# Next.jsプロジェクトの作成方法
+﻿# Next.jsプロジェクトの作成方法
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -224,5 +224,4 @@ npm config get prefix
 
 ---
 tags: [nextjs, setup, create-next-app, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

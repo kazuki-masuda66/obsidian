@@ -406,18 +406,28 @@ tags: [daily, 2025, 2025-01]
 
 ```
 04_Memory/
-├─ AI/
+├─ AI/                    # AI関連の知識（汎用的）
 │  ├─ _AI-MOC.md          ← マスターマップ（必須）
 │  ├─ Tools/
 │  ├─ Techniques/
 │  └─ Concepts/
-├─ Education/
-│  └─ _Education-MOC.md
-├─ Business/
+├─ Business/              # ビジネス知識（汎用的）
 │  └─ _Business-MOC.md
-├─ Technical/
+├─ Work/                  # 特定の会社・組織関連の知識
+│  ├─ _Work-MOC.md
+│  └─ ONE/                # ONE社関連の知識
+│     ├─ Business/Shipping/  # AFLA関連の業務知識
+│     ├─ DX/                 # DX関連（全てのDX関連知識をここに集約）
+│     │  ├─ Taskforce/      # DX taskforce関連
+│     │  ├─ Eagle-X/         # Eagle-Xプロジェクト
+│     │  ├─ Systems/         # システムツール（OPUS、Tiger、ONE-Quoteなど）
+│     │  └─ Digital-Marketing/  # デジタルマーケティング
+│     └─ Training/           # 研修・教育コンテンツ
+├─ Education/             # 教育知識（汎用的）
+│  └─ _Education-MOC.md
+├─ Technical/             # 技術知識（汎用的）
 │  └─ _Tech-MOC.md
-├─ Personal/
+├─ Personal/              # 個人関連の知識
 │  └─ _Personal-MOC.md
 └─ _Master-Index.md      ← 全体マップ（必須）
 ```

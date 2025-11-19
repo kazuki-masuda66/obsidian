@@ -80,18 +80,30 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
 - 品質スコア7点以上
 
 **サブフォルダ構成:**
-- `AI/`: AI関連の知識
+- `AI/`: AI関連の知識（汎用的）
   - Tools/（Cursor、Claude、Difyなど）
   - Techniques/（Prompting、RAG、Agent Developmentなど）
   - Concepts/（LLM基礎、Transformerなど）
-- `Business/`: ビジネス関連の知識
-  - Marketing/、Sales/、Operations/、Community-Building/
-- `Education/`: 教育関連の知識
+- `Business/`: ビジネス関連の知識（汎用的）
+  - Sales/、Community-Building/
+  - **注意**: 特定の会社・組織に関連する知識は `Work/` に配置
+- `Work/`: 特定の会社・組織に関連する知識
+  - `ONE/`: ONE社関連の知識
+    - `Business/Shipping/`: AFLA関連の業務知識
+    - `DX/`: DX関連（全てのDX関連知識をここに集約）
+      - `Taskforce/`: DX taskforce関連
+      - `Eagle-X/`: Eagle-Xプロジェクト関連
+      - `Systems/`: システムツール（OPUS、Tiger、ONE-Quoteなど）
+      - `Digital-Marketing/`: デジタルマーケティング関連
+    - `Training/`: 研修・教育コンテンツ
+- `Education/`: 教育関連の知識（汎用的）
   - Curriculum-Design/、Pedagogy/、Teaching-Techniques/
+  - **注意**: 特定の会社の研修は `Work/[会社名]/Training/` に配置
 - `Personal/`: 個人関連の知識
   - Health/、Parenting/、Productivity/
-- `Technical/`: 技術関連の知識
-  - Architecture/、DevOps/、Programming/
+- `Technical/`: 技術関連の知識（汎用的）
+  - Architecture/、DevOps/、Programming/、Tools/
+  - **注意**: 特定の会社のシステムは `Work/[会社名]/DX/Systems/` に配置
 
 ### 05_Output/Projects に振り分ける条件
 - 具体的なプロジェクトについて書かれている（期限あり）
@@ -188,23 +200,42 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
 - SNS投稿のアイデア
 
 ### 04_Memory/Business/ に振り分ける条件
-- ビジネス知識・戦略
-- マーケティング手法
-- セールス手法
-- ビジネス運営の知識
+- **汎用的なビジネス知識**（業界・会社を問わない）
+- セールス手法（汎用的）
+- コミュニティ運営の知識（汎用的）
+- ビジネス運営の知識（汎用的）
 
 **具体例:**
-- マーケティング戦略の知識
-- セールス手法の知識
-- ビジネス運営のベストプラクティス
+- セールス手法の知識（汎用的）
+- コミュニティ運営方法（汎用的）
+- ビジネス運営のベストプラクティス（汎用的）
+
+**注意**: 特定の会社・組織に関連する知識は `Work/[会社名]/` に配置
+
+### 04_Memory/Work/ONE/ に振り分ける条件
+- **ONE社に関連する知識**
+- ONE社の業務知識（AFLA関連）→ `Work/ONE/Business/Shipping/`
+- DX関連（DX taskforce、Eagle-X、Systems、Digital-Marketing）→ `Work/ONE/DX/`
+- ONE社の研修・教育コンテンツ → `Work/ONE/Training/`
+
+**具体例:**
+- AFLA関連の業務知識 → `Work/ONE/Business/Shipping/`
+- Eagle-Xプロジェクト関連 → `Work/ONE/DX/Eagle-X/`
+- OPUS、Tiger、ONE-Quoteなどのシステム → `Work/ONE/DX/Systems/`
+- ONE社のデジタルマーケティング → `Work/ONE/DX/Digital-Marketing/`
+- Orientation、KnowingONE、ONE Japan研修 → `Work/ONE/Training/`
 
 ### 02_Daily または 04_Memory に振り分ける条件
 - 学習記録（日次）→ `02_Daily/YYYY/YYYY-MM/YYYY-MM-DD/learning-[トピック].md`
 - 学習知識（長期）→ `04_Memory/Education/` または `04_Memory/Technical/`
+  - **汎用的な教育知識** → `04_Memory/Education/`
+  - **汎用的な技術知識** → `04_Memory/Technical/`
+  - **特定の会社の研修・教育コンテンツ** → `Work/[会社名]/Training/`（例: ONE社の研修は `Work/ONE/Training/`）
 
 **具体例:**
 - 今日学んだこと → Daily内のlearningノート
-- 体系的に整理された知識 → Memory
+- 体系的に整理された知識（汎用的） → Memory
+- ONE社のOrientation、KnowingONE研修 → `Work/ONE/Training/`
 
 ### 02_Daily/YYYY/YYYY-MM/YYYY-MM-DD/YYYY-MM-DD-TODO.md に振り分ける条件
 - その日のTODOリスト
@@ -350,7 +381,9 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
    - mv コマンドでファイルを移動
    - サブフォルダが存在しない場合は作成
    - 承認不要で自動実行
-6. **04_Memory** の場合は、適切なサブフォルダ（AI/、Business/、Education/、Personal/、Technical/）に配置し、該当するMOCを更新
+6. **04_Memory** の場合は、適切なサブフォルダ（AI/、Business/、Work/、Education/、Personal/、Technical/）に配置し、該当するMOCを更新
+   - **Work/** への移動時は、特定の会社・組織に関連する知識かどうかを判断
+   - ONE社関連は `Work/ONE/` 配下の適切なサブフォルダに配置
 7. **02_Daily** の場合は、日付フォルダ形式（YYYY/YYYY-MM/YYYY-MM-DD/）に配置
 8. **必要に応じてファイルの内容を更新**
    - タグの追加・修正
@@ -371,7 +404,8 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
 - サブフォルダが存在しない場合は作成
 - ファイル名の日付接頭辞は保持
 - 移動後、必要に応じてメタデータ（タグ・リンク）を更新
-- **04_Memory** への移動時は必ずサブフォルダを指定（AI/、Business/、Education/、Personal/、Technical/のいずれか）し、該当するMOCを更新
+- **04_Memory** への移動時は必ずサブフォルダを指定（AI/、Business/、Work/、Education/、Personal/、Technical/のいずれか）し、該当するMOCを更新
+- **Work/** への移動時は、特定の会社・組織に関連する知識かどうかを判断（ONE社関連は `Work/ONE/` 配下）
 - **02_Daily** は日付フォルダ形式（YYYY/YYYY-MM/YYYY-MM-DD/）を厳守
 - 判断に迷う場合は **99_Archive** に移動
 - 複数のトピックが含まれている場合は、それぞれを分析して適切に扱う

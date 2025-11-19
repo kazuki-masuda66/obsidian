@@ -44,6 +44,7 @@
 - [ ] 各カテゴリーのMOC更新
   - `04_Memory/AI/_AI-MOC.md`
   - `04_Memory/Business/_Business-MOC.md`
+  - `04_Memory/Work/_Work-MOC.md`
   - `04_Memory/Education/_Education-MOC.md`
   - `04_Memory/Personal/_Personal-MOC.md`
   - `04_Memory/Technical/_Tech-MOC.md`
@@ -160,6 +161,7 @@ SORT length(rows) DESC
 ## 📚 Memory成長
 - AI: +5件
 - Business: +3件
+- Work: +8件（ONE社関連）
 - Education: +2件
 - Technical: +2件
 

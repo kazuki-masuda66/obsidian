@@ -1,4 +1,4 @@
-# モダンJs
+﻿# モダンJs
 
 ## 概要
 モダンJsに関する知見を整理する。 モダンJSはES Modulesや最新構文をフル活用する姿勢。 JavaScriptの基礎はスコープ・非同期・プロトタイプチェーン。
@@ -18,4 +18,4 @@
 - [ ] Dockerfileにコメントで根拠を記録し、変更理由を残す。
 ## メモ
 - 更新日: 2025-11-13
-- 参照タグ: #technical
+- 参照タグ: #technical`n`n#memory #technical

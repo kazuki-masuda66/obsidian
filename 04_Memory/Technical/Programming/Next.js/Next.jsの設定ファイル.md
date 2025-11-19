@@ -1,4 +1,4 @@
-# Next.jsの設定ファイル
+﻿# Next.jsの設定ファイル
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -178,5 +178,4 @@ npm run dev
 
 ---
 tags: [nextjs, configuration, next-config, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

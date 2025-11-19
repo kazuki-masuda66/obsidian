@@ -1,4 +1,4 @@
-# Next.jsのTypeScript設定
+﻿# Next.jsのTypeScript設定
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -185,5 +185,4 @@ interface Props {
 
 ---
 tags: [nextjs, typescript, type-safety, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

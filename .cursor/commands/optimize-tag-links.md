@@ -33,11 +33,21 @@
 - `#status/draft` - ステータス
 - `#technology/分野` - 技術分野別
 - `#ai/tools/cursor` - AIツール別（階層化）
+- `#work/one` - ONE社関連の知識
+- `#work/one/afla` - AFLA関連
+- `#work/one/eagle-x` - Eagle-Xプロジェクト
+- `#work/one/dx` - DX関連
+- `#work/one/training` - ONE社の研修
 
 タグのルール:
 - 10個程度を目安とする（最大10タグまで）
 - 階層化タグを使用: `#technology/frontend/react`
 - ファイルの場所に応じて適切なタグを提案
+  - `04_Memory/Work/ONE/` 配下のファイル → `#work/one` を追加
+  - `04_Memory/Business/` 配下のファイル → `#business` を追加（汎用的なビジネス知識）
+  - `04_Memory/AI/` 配下のファイル → `#ai` を追加
+  - `04_Memory/Education/` 配下のファイル → `#education` を追加（汎用的な教育知識）
+  - `04_Memory/Technical/` 配下のファイル → `#technical` を追加（汎用的な技術知識）
 
 リンクのルール:
 - **リンクすべきもの**:
@@ -70,6 +80,7 @@
 - 階層化でより検索しやすく
 - #設計 → #technology/api/design に統合
 - #memory を追加（Memoryフォルダなので）
+- ファイルの場所に応じたカテゴリタグを追加（例: `#work/one`、`#business`、`#ai`など）
 
 ### 🔗 双方向リンク最適化
 

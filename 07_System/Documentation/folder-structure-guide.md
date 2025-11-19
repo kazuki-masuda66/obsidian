@@ -113,15 +113,37 @@ SecondBrain_Vault/
 #### 構造
 ```
 04_Memory/
-├─ AI/
+├─ AI/                    # AI関連の知識（汎用的）
 │  ├─ _AI-MOC.md
 │  ├─ Tools/
 │  ├─ Techniques/
 │  └─ Concepts/
-├─ Business/
-├─ Education/
-├─ Personal/
-├─ Technical/
+├─ Business/              # ビジネス知識（汎用的）
+│  ├─ _Business-MOC.md
+│  ├─ Sales/
+│  └─ Community-Building/
+├─ Work/                  # 特定の会社・組織関連の知識
+│  ├─ _Work-MOC.md
+│  └─ ONE/                # ONE社関連の知識
+│     ├─ Business/Shipping/  # AFLA関連の業務知識
+│     ├─ DX/                 # DX関連（全てのDX関連知識をここに集約）
+│     │  ├─ Taskforce/      # DX taskforce関連
+│     │  ├─ Eagle-X/         # Eagle-Xプロジェクト
+│     │  ├─ Systems/         # システムツール（OPUS、Tiger、ONE-Quoteなど）
+│     │  └─ Digital-Marketing/  # デジタルマーケティング
+│     └─ Training/           # 研修・教育コンテンツ
+├─ Education/             # 教育知識（汎用的）
+│  ├─ _Education-MOC.md
+│  ├─ Curriculum-Design/
+│  ├─ Pedagogy/
+│  └─ Teaching-Techniques/
+├─ Personal/              # 個人関連の知識
+│  └─ _Personal-MOC.md
+├─ Technical/             # 技術知識（汎用的）
+│  ├─ _Tech-MOC.md
+│  ├─ Architecture/
+│  ├─ DevOps/
+│  └─ Programming/
 └─ _Master-Index.md
 ```
 

@@ -1,4 +1,4 @@
-# Next.jsのビルドとデプロイ
+﻿# Next.jsのビルドとデプロイ
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -186,5 +186,4 @@ npm run build
 
 ---
 tags: [nextjs, deployment, build, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical

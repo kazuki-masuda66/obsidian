@@ -1,4 +1,4 @@
-# AIインフラ - 価値の移動と構造変化
+﻿# AIインフラ - 価値の移動と構造変化
 
 ## 概要
 AIインフラストラクチャの複雑な階層構造と、各レイヤー間での価値の移動について考察。モデル層からアプリ層への価値シフト、物理的制約の影響、地政学リスクなど、多角的な視点からAIエコシステムの本質を分析した記事。
@@ -92,5 +92,4 @@ AIインフラストラクチャの複雑な階層構造と、各レイヤー間
 - [[04_Memory/Business/Strategy/]]
 - [[04_Memory/AI/Tools/OpenAI]]
 
-#inbox #ai-infrastructure #strategy #business-model #note記事
-
+#ai-infrastructure #strategy #business-model #note記事`n#memory #ai

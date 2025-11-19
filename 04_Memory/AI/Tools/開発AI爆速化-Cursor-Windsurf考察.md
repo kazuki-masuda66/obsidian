@@ -1,4 +1,4 @@
-# 開発AI爆速化 - Cursor・Windsurf考察
+﻿# 開発AI爆速化 - Cursor・Windsurf考察
 
 ## 概要
 CursorのComposerモデルやWindsurfのSWE1.5など、開発AIツールの劇的な進化について。「思考速度と実装速度の乖離」という本質的ボトルネックが解消され始めている現状と、それがエンジニアの役割に与える影響を考察。
@@ -172,5 +172,4 @@ AI の特性:
 - [[04_Memory/Personal/Productivity/Engineering-Workflow]]
 - [[04_Memory/AI/Concepts/AI-Coding-Future]]
 
-#inbox #cursor #windsurf #ai-coding #engineer #productivity #note記事
-
+#cursor #windsurf #ai-coding #engineer #productivity #note記事`n#memory #ai

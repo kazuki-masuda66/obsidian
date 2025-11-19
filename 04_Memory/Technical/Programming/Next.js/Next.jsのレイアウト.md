@@ -1,4 +1,4 @@
-# Next.jsのレイアウト
+﻿# Next.jsのレイアウト
 
 **関連MOC**: [[_Next.js-MOC]] | [[_Tech-MOC]]
 
@@ -378,5 +378,4 @@ export default function RootLayout({
 
 ---
 tags: [nextjs, layout, app-router, technical/programming]
-created: 2025-11-13
-
+created: 2025-11-13`n`n#memory #technical
