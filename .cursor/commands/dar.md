@@ -100,19 +100,69 @@ DAR（Demurrage and Detention Request）業務を支援します。CTIC/DET割�
 - **リクエストタイプ**: Free Time延長、CTIC/DET割引、Total Waiver、Rate Backdate
 
 ### 2. 関連情報の参照
-対象国や顧客に基づいて、以下のディレクトリから関連するルールファイルを参照してください。
-**必ず `read_file` で内容を確認してから回答を作成すること。**
 
-- **基本ディレクトリ**: `04_Memory/Work/ONE/Business/Shipping/Pricing/`
-- **国別DAR処理方法**:
-  - **Chile**: `.../Pricing/Chile/20251121_Chile-Pricing-DAR処理方法.md`
-  - **Ecuador**: `.../Pricing/Ecuador/20251121_Ecuador-Pricing-DAR処理方法.md`
-  - **Mexico**: `.../Pricing/Mexico/20251121_Mexico-Pricing-DAR処理方法.md`
-  - **Peru**: `.../Pricing/Peru/20251121_Peru-Pricing-DAR処理方法.md`
-- **顧客別ルール**:
-  - `.../Pricing/[Country]/20251121_[Country]-Pricing-主要顧客別ルール.md`
-- **共通ルール**:
-  - Detentionの考え方: `.../20251118_WK32-Offer-ValidityとBREAK-BULK-RATE-REQUEST.md`
+**重要**: 対象国や顧客に基づいて、`04_Memory/Work/ONE/Business/Shipping/`配下の関連情報を**必ず都度参照**してください。
+
+#### 2.1 参照方法
+
+以下のツールを組み合わせて、関連情報を漏れなく収集してください：
+
+1. **`codebase_search`**: セマンティック検索で関連情報を探索
+   - 例: "Ecuador DAR waiver approval process"
+   - 例: "Chile CTIC discount criteria"
+   - 例: "Mexico container theft DAR handling"
+   - 例: "Free Time extension approval rules"
+
+2. **`grep`**: 特定のキーワードや顧客名で検索
+   - 例: 顧客名、B/L番号、DAR番号、RFA番号など
+
+3. **`read_file`**: 特定のファイルを直接読み込む
+   - 特定のファイルパスが明確な場合
+
+4. **`list_dir`**: ディレクトリ構造を確認して関連ファイルを特定
+
+#### 2.2 参照すべきディレクトリとファイル
+
+**基本ディレクトリ**: `04_Memory/Work/ONE/Business/Shipping/Pricing/`
+
+**国別DAR処理方法**:
+- **Chile**: `.../Pricing/Chile/20251121_Chile-Pricing-DAR処理方法.md`
+- **Ecuador**: `.../Pricing/Ecuador/20251121_Ecuador-Pricing-DAR処理方法.md`
+- **Mexico**: `.../Pricing/Mexico/20251121_Mexico-Pricing-DAR処理方法.md`
+- **Peru**: `.../Pricing/Peru/20251121_Peru-Pricing-DAR処理方法.md`
+
+**顧客別ルール**:
+- `.../Pricing/[Country]/20251121_[Country]-Pricing-主要顧客別ルール.md`
+  - 例: `20251121_Chile-Pricing-主要顧客別ルール.md`
+  - 例: `20251121_Ecuador-Pricing-主要顧客別ルール.md`
+
+**共通ルール**:
+- Detentionの考え方: `.../20251118_WK32-Offer-ValidityとBREAK-BULK-RATE-REQUEST.md`
+- その他の共通ルールファイル
+
+**過去のDAR事例**:
+- `codebase_search`で類似ケースを検索
+- 同じ顧客の過去のDAR処理履歴
+- 同じ国での類似DARケース
+
+#### 2.3 参照の優先順位
+
+1. **まず `codebase_search` で広く検索**: 関連する情報を漏れなく収集
+   - 国別DAR処理方法
+   - 顧客別の過去事例
+   - 類似ケースの処理方法
+
+2. **次に `grep` で特定キーワード検索**: 顧客名、B/L番号、DAR番号など
+
+3. **最後に `read_file` で詳細確認**: 特定のファイルの内容を詳細に確認
+
+#### 2.4 参照時の注意点
+
+- **必ず `read_file` で内容を確認してから回答を作成すること**
+- 複数のファイルに情報が分散している場合は、全て参照すること
+- 過去のDAR事例や類似ケースも検索して参照すること
+- 顧客別の特別ルールや過去の実績がある場合は、必ず確認すること
+- 同じ顧客の過去のDAR処理履歴を確認すること
 
 ### 3. 判断基準の適用
 

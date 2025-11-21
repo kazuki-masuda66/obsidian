@@ -87,18 +87,67 @@
 - **アクション**: 新規見積もり, レート延長, フリータイム申請, システム入力
 
 ### 2. 関連情報の参照
-対象国や顧客に基づいて、以下のディレクトリから関連するルールファイルを参照してください。
-**必ず `read_file` で内容を確認してから回答を作成すること。**
 
-- **基本ディレクトリ**: `04_Memory/Work/ONE/Business/Shipping/Pricing/`
-- **国別ルール**:
-  - **Chile**: `.../Pricing/Chile/` (基本ルール, 主要顧客, 特殊港など)
-  - **Ecuador**: `.../Pricing/Ecuador/` (基本ルール, AHA/DOF条件, 特殊貨物など)
-  - **Mexico**: `.../Pricing/Mexico/`
-  - **Peru**: `.../Pricing/Peru/`
-- **共通ルール**:
-  - 禁輸・制限港リスト: `.../LAWC/20251121_絶対にオファーしない港リスト.md`
-  - リーファー制限: `.../LAWC/20251121_リーファー20RHオファー禁止ルール.md`
+**重要**: 対象国や顧客に基づいて、`04_Memory/Work/ONE/Business/Shipping/`配下の関連情報を**必ず都度参照**してください。
+
+#### 2.1 参照方法
+
+以下のツールを組み合わせて、関連情報を漏れなく収集してください：
+
+1. **`codebase_search`**: セマンティック検索で関連情報を探索
+   - 例: "Ecuador pricing rules for Starcargo"
+   - 例: "Chile NOR rate approval process"
+   - 例: "Mexico DAR waiver criteria"
+
+2. **`grep`**: 特定のキーワードや顧客名で検索
+   - 例: 顧客名、港コード、RFA番号など
+
+3. **`read_file`**: 特定のファイルを直接読み込む
+   - 特定のファイルパスが明確な場合
+
+4. **`list_dir`**: ディレクトリ構造を確認して関連ファイルを特定
+
+#### 2.2 参照すべきディレクトリとファイル
+
+**基本ディレクトリ**: `04_Memory/Work/ONE/Business/Shipping/Pricing/`
+
+**国別ルール**:
+- **Chile**: `.../Pricing/Chile/` (基本ルール, 主要顧客, 特殊港など)
+  - `20251121_Chile-Pricing-基本ルールとTigerシステム.md`
+  - `20251121_Chile-Pricing-主要顧客別ルール.md`
+  - `20251121_Chile-Pricing-チリ特有の港とルール.md`
+  - `20251121_Chile-Pricing-DAR処理方法.md`
+- **Ecuador**: `.../Pricing/Ecuador/` (基本ルール, AHA/DOF条件, 特殊貨物など)
+  - `20251121_Ecuador-Pricing-基本ルールとTigerシステム.md`
+  - `20251121_Ecuador-Pricing-主要顧客別ルール.md`
+  - `20251121_Ecuador-Pricing-特殊貨物とFree-Time設定.md`
+  - `20251121_Ecuador-Pricing-特殊貨物とAP処理.md`
+  - `20251121_Ecuador-Pricing-DAR処理方法.md`
+- **Mexico**: `.../Pricing/Mexico/`
+  - `20251121_Mexico-Pricing-DAR処理方法.md`
+  - その他のMexico関連ファイル
+- **Peru**: `.../Pricing/Peru/`
+  - `20251121_Peru-Pricing-DAR処理方法.md`
+  - その他のPeru関連ファイル
+
+**共通ルール**:
+- `.../LAWC/20251121_絶対にオファーしない港リスト.md`
+- `.../LAWC/20251121_リーファー20RHオファー禁止ルール.md`
+- `.../20251118_WK32-Offer-ValidityとBREAK-BULK-RATE-REQUEST.md`
+- `.../20250113_スポット・短期Pricingのプロセス-非Tender案件の運賃設定.md`
+
+#### 2.3 参照の優先順位
+
+1. **まず `codebase_search` で広く検索**: 関連する情報を漏れなく収集
+2. **次に `grep` で特定キーワード検索**: 顧客名、港コード、RFA番号など
+3. **最後に `read_file` で詳細確認**: 特定のファイルの内容を詳細に確認
+
+#### 2.4 参照時の注意点
+
+- **必ず `read_file` で内容を確認してから回答を作成すること**
+- 複数のファイルに情報が分散している場合は、全て参照すること
+- 過去の事例や類似ケースも検索して参照すること
+- 顧客別の特別ルールがある場合は、必ず確認すること
 
 ### 3. 判断とアクションの提案
 参照したルールに基づき、以下のアクションを提案してください。

@@ -139,6 +139,23 @@
 - DAR作成の指示
 - Kazuki Masudaのメールスタイルに合わせた返信文作成
 
+### 21. /space-control [質問内容]
+**説明**: Space Control業務（スペース管理、Roll List作成、Wayport処理、Master Constraint Table更新など）を支援  
+**使用例**: 
+- `/space-control AX4のスペース更新の手順を教えて`
+- `/space-control Roll List作成の方法を確認したい`
+- `/space-control Wayport処理のルールを教えて`
+- `/space-control Master Constraint Tableの更新手順を確認したい`
+- `/space-control Show up Ratioの考え方を教えて`
+
+**機能:**
+- 日次・週次タスクの支援（スペース更新、Closing作業など）
+- Roll List作成の手順と判断基準
+- Wayport処理のルールと手順
+- Master Constraint Table更新の詳細手順
+- Show up Ratioの理解と活用方法
+- 緊急時対応（Misconnection発生時など）
+
 ---
 
 ## 🔄 よく使う組み合わせ
