@@ -112,6 +112,33 @@
 - 分析ダッシュボード.md - 分析ダッシュボード
 - アクティブフォーカス.md - アクティブフォーカスダッシュボード
 
+### 19. /pricing [質問内容]
+**説明**: プライシング業務（見積もり作成、承認判断、システム入力、メール対応）を支援  
+**使用例**: 
+- `/pricing エクアドルのStarcargo向けの40HCレートを教えて`
+- `/pricing チリのSan Antonio向けのDG貨物の承認ルールは？`
+- `/pricing メキシコのDAR申請の手順を確認したい`
+
+**機能:**
+- 国別ルール、顧客別契約、システム操作手順を参照
+- メールオファー時の必須条件（Remarks）を含めたドラフト作成
+- Kazuki Masudaのメールスタイルに合わせた返信文作成
+
+### 20. /dar [質問内容]
+**説明**: DAR（Demurrage and Detention Request）業務を支援  
+**使用例**: 
+- `/dar エクアドルのStarcargoのFree Time延長リクエストを承認して`
+- `/dar チリのFalabellaのCTIC延長の判断基準は？`
+- `/dar メキシコのコンテナ盗難ケースのDAR処理方法を教えて`
+- `/dar ペルーのJP & INSUTEXTILのCTIC discountリクエストを判断して`
+
+**機能:**
+- CTIC/DET割引・Waiverの承認判断
+- Free Time延長の処理
+- 証拠の確認と要求
+- DAR作成の指示
+- Kazuki Masudaのメールスタイルに合わせた返信文作成
+
 ---
 
 ## 🔄 よく使う組み合わせ
