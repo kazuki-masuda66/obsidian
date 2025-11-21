@@ -13,8 +13,9 @@ Inboxフォルダ内のファイルを適切なフォルダに振り分けます
 
 ## 使用するツール
 - `read_file`: ファイル内容を読み込む（必ず全内容を読み込む）
-- `run_terminal_cmd`: ファイルの移動（mv コマンド）
+- `run_terminal_cmd`: ファイルの移動（mv コマンド）、Pythonスクリプトの実行
 - `list_dir`: フォルダ構造の確認
+- `grep`: 数値パターンや特定の文字列を検索（大きなファイルの分析に有効）
 
 ## Prompt
 Inboxフォルダ内のファイルを内容に基づいて適切なフォルダに振り分けてください。
@@ -27,11 +28,15 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
    - ファイル名だけで判断しない
    - ファイル名が不明瞭でも内容から判断する
    - ファイルのサイズが大きくても必ず全内容を読む
+   - **非MDファイル（PPTX、PDF、XLSX）も必ず処理対象に含める**
+   - **大きなファイル（5万行以上など）の場合は、チャンクで読み込むか、`grep`を使って数値パターンや重要な情報を抽出**
 2. **内容を理解して抽象化する**
    - ファイルの本質的な内容を捉える
    - 表面的な文字列ではなく、意味や意図を理解する
    - 重要な概念や知識を抽出する
    - 複数のトピックが含まれている場合は、それぞれを分析する
+   - **数値データ（金額、数量、パーセンテージ、日付など）も含めて内容を理解する**
+   - **実例やケーススタディも含めて内容を理解する**
 3. **内容から振り分け先を判定**
    - 抽象化した内容に基づいて判定
    - フォルダ間の使い分けガイドを参照
@@ -215,13 +220,17 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
 ### 04_Memory/Work/ONE/ に振り分ける条件
 - **ONE社に関連する知識**
 - ONE社の業務知識（AFLA関連）→ `Work/ONE/Business/Shipping/`
+  - **Pricing関連の知識**（Chile、Mexico、Peru、Ecuadorなど）→ `Work/ONE/Business/Shipping/Pricing/`
+  - **DAR処理方法、顧客別ルール、港別ルール、特殊貨物処理など** → `Work/ONE/Business/Shipping/Pricing/`
 - DX関連（DX taskforce、Eagle-X、Systems、Digital-Marketing）→ `Work/ONE/DX/`
 - ONE社の研修・教育コンテンツ → `Work/ONE/Training/`
 
 **具体例:**
 - AFLA関連の業務知識 → `Work/ONE/Business/Shipping/`
+- **Chile-Pricing、Mexico-Pricing、Peru-Pricing、Ecuador-Pricing** → `Work/ONE/Business/Shipping/Pricing/`
+- **Eagle-X Pricing Tool、OPUS、Tigerシステム** → `Work/ONE/DX/Systems/`
 - Eagle-Xプロジェクト関連 → `Work/ONE/DX/Eagle-X/`
-- OPUS、Tiger、ONE-Quoteなどのシステム → `Work/ONE/DX/Systems/`
+- ONE-Quoteなどのシステム → `Work/ONE/DX/Systems/`
 - ONE社のデジタルマーケティング → `Work/ONE/DX/Digital-Marketing/`
 - Orientation、KnowingONE、ONE Japan研修 → `Work/ONE/Training/`
 
@@ -363,11 +372,62 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
    - ファイル名だけで判断しない
    - ファイル名が曖昧でも内容から判断する
    - ファイルが大きくても分割してでも全内容を読む
+   - **非MDファイル（PPTX、PDF、XLSX）の場合は、Pythonスクリプトでテキスト抽出してから読み込む**
+   - **大きなファイル（5万行以上など）の場合は、チャンクで読み込むか、`grep`を使って数値パターンや重要な情報を抽出**
+
+#### MDファイルの読み込み
+- `read_file` ツールを使って、ファイル全体を読み込む
+- 複数ファイルがある場合でも、各ファイルの内容をしっかり確認する
+
+#### 非MDファイル（PPTX、PDF、XLSX）の読み込み
+**重要**: これらのファイルは表面的な情報だけでなく、**具体的な数値、実例、詳細な内容を全て取り込んで理解する**
+
+1. **PPTXファイル（.pptx）**:
+   - Pythonスクリプト（`extract_pptx.py`）を作成してテキスト抽出
+   - `python-pptx`ライブラリを使用
+   - 全てのスライドからテキストを抽出（タイトル、本文、テーブル内の数値など）
+   - UTF-8エンコーディングで出力（`sys.stdout.buffer.write(result.encode('utf-8', errors='replace'))`）
+   - **具体的な数値、パーセンテージ、金額、日付なども全て取り込む**
+
+2. **PDFファイル（.pdf）**:
+   - Pythonスクリプト（`extract_pdf.py`）を作成してテキスト抽出
+   - `PyPDF2`ライブラリを使用（必ずインストール確認: `pip install PyPDF2`）
+   - 全てのページからテキストを抽出
+   - UTF-8エンコーディングで出力
+   - **具体的な数値、表の内容、図表の説明なども全て取り込む**
+
+3. **XLSX/XLSファイル（.xlsx、.xls）**:
+   - Pythonスクリプト（`extract_xlsx.py`）を作成してテキスト抽出
+   - `openpyxl`ライブラリを使用
+   - 全てのシート、全ての行・列からデータを抽出
+   - UTF-8エンコーディングで出力
+   - **セル内の数値、日付、文字列なども全て取り込む**
+
+4. **抽出スクリプトの実行**:
+   - `run_terminal_cmd`を使ってPythonスクリプトを実行
+   - 出力をファイルに保存してから`read_file`で読み込む
+   - エラーが発生した場合は、エンコーディング問題を確認（UTF-8に統一）
+
+#### 数値や実例の詳細な抽出
+1. **`grep`ツールを活用**:
+   - 数値パターン: `USD\s*\d+[,\d]*|\d+[,\d]*\s*USD|\d+[,\d]*\s*TEU|\d+[,\d]*\s*days|\d+[,\d]*\s*%`
+   - B/L番号、Booking番号: `BL:|B/L:|Booking:|TPEF|TAOFJ|ONEYSZPF`
+   - 顧客名、組織名: `STARCARGO|MAVIJU|FARLETZA|PLUSCARGO`
+   - 日付パターン: `\d{4}-\d{2}-\d{2}|December|November|January`
+
+2. **実例の抽出**:
+   - ケーススタディ、具体例、実績データを全て取り込む
+   - 金額、数量、パーセンテージ、日付などの数値データを漏らさない
+   - 顧客別のルール、特別条件、例外ケースも詳細に記録
+
 2. **内容を理解して抽象化する**
    - 「このファイルは何について書かれているか？」を理解する
    - 重要な概念や知識を抽出する
    - 複数のトピックが含まれている場合は、それぞれを分析する
    - ノートの本質的な目的を捉える
+   - **数値データ（金額、数量、パーセンテージ、日付など）も含めて内容を理解する**
+   - **実例やケーススタディも含めて内容を理解する**
+   - **表面的な情報だけでなく、詳細な内容を全て理解する**（「薄っぺらい」理解を避ける）
 3. **抽象化した内容から振り分け先を判定**
    - フォルダ間の使い分けガイドを参照
    - サブフォルダも考慮（04_Memory、03_Inputなど）
@@ -384,6 +444,7 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
 6. **04_Memory** の場合は、適切なサブフォルダ（AI/、Business/、Work/、Education/、Personal/、Technical/）に配置し、該当するMOCを更新
    - **Work/** への移動時は、特定の会社・組織に関連する知識かどうかを判断
    - ONE社関連は `Work/ONE/` 配下の適切なサブフォルダに配置
+   - **Pricing関連の知識は `Work/ONE/Business/Shipping/` に配置**（例: Chile-Pricing、Mexico-Pricing、Peru-Pricing、Ecuador-Pricing）
 7. **02_Daily** の場合は、日付フォルダ形式（YYYY/YYYY-MM/YYYY-MM-DD/）に配置
 8. **必要に応じてファイルの内容を更新**
    - タグの追加・修正
@@ -400,12 +461,16 @@ Inboxフォルダ内のファイルを内容に基づいて適切なフォルダ
 - **必須**: ファイルの内容を理解して抽象化してから振り分け先を判定すること
 - **必須**: ファイル名が不明瞭でも、内容から本質的なトピックを理解すること
 - **必須**: ファイルが大きくても、分割してでも全内容を読むこと
+- **必須**: 非MDファイル（PPTX、PDF、XLSX）も必ず処理対象に含め、Pythonスクリプトでテキスト抽出してから読み込むこと
+- **必須**: 数値データ（金額、数量、パーセンテージ、日付など）や実例も含めて内容を理解すること
+- **必須**: 表面的な情報だけでなく、詳細な内容を全て理解すること（「薄っぺらい」理解を避ける）
 - ファイル移動時はGit履歴を保持
 - サブフォルダが存在しない場合は作成
 - ファイル名の日付接頭辞は保持
 - 移動後、必要に応じてメタデータ（タグ・リンク）を更新
 - **04_Memory** への移動時は必ずサブフォルダを指定（AI/、Business/、Work/、Education/、Personal/、Technical/のいずれか）し、該当するMOCを更新
 - **Work/** への移動時は、特定の会社・組織に関連する知識かどうかを判断（ONE社関連は `Work/ONE/` 配下）
+- **Pricing関連の知識は `Work/ONE/Business/Shipping/` に配置**（例: Chile-Pricing、Mexico-Pricing、Peru-Pricing、Ecuador-Pricing）
 - **02_Daily** は日付フォルダ形式（YYYY/YYYY-MM/YYYY-MM-DD/）を厳守
 - 判断に迷う場合は **99_Archive** に移動
 - 複数のトピックが含まれている場合は、それぞれを分析して適切に扱う
