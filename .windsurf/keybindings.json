@@ -1,0 +1,8 @@
+[
+  {
+    "key": "\\",
+    "command": "workbench.action.showCommands",
+    "when": "editorTextFocus || !editorTextFocus"
+  }
+]
+

@@ -821,6 +821,80 @@ Top 5タグ:
 
 ---
 
+## 💼 業務支援コマンド
+
+### `/pricing [質問内容]` - プライシング業務支援
+
+**説明**: プライシング業務（見積もり作成、承認判断、システム入力、メール対応）を支援します。
+
+**引数**:
+- 質問内容: プライシングに関する質問や依頼
+
+**実行内容**:
+1. メール内容の理解と説明（メールが貼り付けられた場合）
+2. 依頼内容の分析（対象国、顧客名、貨物詳細、航路など）
+3. 関連情報の参照（国別ルール、顧客別契約、CM最大化ガイドなど）
+4. 判断とアクションの提案（見積もり作成、承認判断、システム入力支援、メールドラフト作成）
+
+**使用例**:
+```
+/pricing エクアドルのStarcargo向けの40HCレートを教えて
+/pricing チリのSan Antonio向けのDG貨物の承認ルールは？
+/pricing メキシコのDAR申請の手順を確認したい
+```
+
+**機能**:
+- 国別ルール、顧客別契約、システム操作手順を参照
+- CM最大化の視点から判断（Expected CM/TEUの計算）
+- メールオファー時の必須条件（Remarks）を含めたドラフト作成
+- Kazuki Masudaのメールスタイルに合わせた返信文作成
+
+**参照する情報**:
+- `04_Memory/Work/ONE/Business/Shipping/Pricing/` 配下の国別ルール
+- `最高のPricing-CM最大化ガイド.md` - CM最大化の包括的ガイド
+- 顧客別ルール、DAR処理方法、特殊貨物ルールなど
+
+**詳細**: [[.cursor/commands/pricing.md]]
+
+---
+
+### `/dar [質問内容]` - DAR業務支援
+
+**説明**: DAR（Demurrage and Detention Request）業務を支援します。
+
+**引数**:
+- 質問内容: DARに関する質問や依頼
+
+**実行内容**:
+1. メール内容の理解と説明（メールが貼り付けられた場合）
+2. DARリクエストの分析（対象国、顧客名、B/L番号、請求金額、DARの種類など）
+3. 関連情報の参照（国別DAR処理方法、顧客別ルール、過去のDAR事例など）
+4. 判断基準の適用（責任の所在、顧客の実績、承認権限、DAR割引率の基準）
+5. 判断とアクションの提案（承認・却下、証拠要求、Free Time延長、DAR作成指示）
+
+**使用例**:
+```
+/dar エクアドルのStarcargoのFree Time延長リクエストを承認して
+/dar チリのFalabellaのCTIC延長の判断基準は？
+/dar メキシコのコンテナ盗難ケースのDAR処理方法を教えて
+/dar ペルーのJP & INSUTEXTILのCTIC discountリクエストを判断して
+```
+
+**機能**:
+- CTIC/DET割引・Waiverの承認判断
+- Free Time延長の処理
+- 証拠の確認と要求
+- DAR作成の指示
+- Kazuki Masudaのメールスタイルに合わせた返信文作成
+
+**参照する情報**:
+- `04_Memory/Work/ONE/Business/Shipping/Pricing/[Country]/DAR処理方法.md` - 国別DAR処理方法
+- 顧客別ルール、過去のDAR事例、承認権限など
+
+**詳細**: [[.cursor/commands/dar.md]]
+
+---
+
 ## 🔄 よく使う組み合わせ
 
 ### 朝のルーティン（5分）
@@ -926,6 +1000,8 @@ Top 5タグ:
 - **Brain System Rules**: [[AGENTS.md]] - システム全体のルール
 - **システムドキュメント**: [[07_System/Documentation/system-overview.md]]
 - **コマンド詳細**: [[.cursor/commands/README.md]] - 各コマンドの詳細
+- **プライシング業務支援**: [[.cursor/commands/pricing.md]] - プライシング業務の詳細ガイド
+- **DAR業務支援**: [[.cursor/commands/dar.md]] - DAR業務の詳細ガイド
 
 ---
 

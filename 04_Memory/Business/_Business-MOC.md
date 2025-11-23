@@ -13,6 +13,12 @@
 - [[Business/Community-Building/community-engagement]]
 - [[Business/Community-Building/event-planning]]
 
+### Shipping Industry Analysis
+- [[主要定航船社業績比較-2021年2023年]] - 主要定航船社の業績比較
+- [[コンテナ船マーケット動向-2024年4月実績]] - コンテナ船マーケット動向分析
+- [[コンテナ船供給動向-2023年12月実績]] - コンテナ船供給動向
+- [[コンテナ荷動き-市場動向分析-2023年]] - コンテナ荷動きと市場動向
+
 ## 📝 メモ
 - 月次レビューで必ず最新化する。
 - 関連タグ: #business

@@ -56,6 +56,12 @@
   - [[Tools/Obsidian/20251113_Obsidianのプラグインシステム]] - プラグインシステム
   - [[Tools/Obsidian/20251113_Obsidianのノート作成ベストプラクティス]] - ベストプラクティス
 
+### Shipping & Logistics
+- [[Shipping-Industry-General-Knowledge-基礎知識]] - 海運業界の基礎知識
+- [[Shipping-101-Training-海運物流トレーニング基礎]] - 海運物流トレーニング基礎
+- [[Liner-Business-Model-Basic-定期船ビジネスモデル基礎]] - 定期船ビジネスモデル基礎
+- [[Shipping-Info-Geographical-Location-基礎知識]] - 地理的知識とShipping情報
+
 ---
-**Last Updated**: 2025-11-13
+**Last Updated**: 2025-01-13
 

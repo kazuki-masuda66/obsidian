@@ -70,6 +70,10 @@ EcuadorにおけるDAR (Demurrage and Detention) 処理の方法、CTIC discount
 - **Opus System Issue**: DAR GYEBB25110005A was applying USD 5,000 per container incorrectly, had to cancel and recreate as GYEBB25110009A with USD 1,250 per container
 - **Per Container vs Per B/L**: Specify clearly whether discount is per container or per B/L
 
+## 🔗 関連リンク
+
+- [[../../../../../../.cursor/commands/dar.md]] - DAR業務支援コマンド（Cursor AI）
+
 ## 次アクション
 - [ ] 04_Memory/Work/ONE/Pricing/Ecuador/に移動を検討
 - [ ] DAR処理のベストプラクティスをまとめる

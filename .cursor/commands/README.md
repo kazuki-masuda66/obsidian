@@ -124,6 +124,8 @@
 - メールオファー時の必須条件（Remarks）を含めたドラフト作成
 - Kazuki Masudaのメールスタイルに合わせた返信文作成
 
+**詳細**: [[.cursor/commands/pricing.md]]
+
 ### 20. /dar [質問内容]
 **説明**: DAR（Demurrage and Detention Request）業務を支援  
 **使用例**: 
@@ -138,6 +140,8 @@
 - 証拠の確認と要求
 - DAR作成の指示
 - Kazuki Masudaのメールスタイルに合わせた返信文作成
+
+**詳細**: [[.cursor/commands/dar.md]]
 
 ### 21. /space-control [質問内容]
 **説明**: Space Control業務（スペース管理、Roll List作成、Wayport処理、Master Constraint Table更新など）を支援  
@@ -241,6 +245,8 @@
 - **プロンプト集**: [[08_prompts/README.md]] - 効果的だったプロンプトをカテゴリ別に保存
 - **Brain System Rules**: [[AGENTS.md]] - システム全体のルール
 - **システムドキュメント**: [[07_System/Documentation/system-overview.md]]
+- **プライシング業務支援**: [[.cursor/commands/pricing.md]] - プライシング業務の詳細ガイド
+- **DAR業務支援**: [[.cursor/commands/dar.md]] - DAR業務の詳細ガイド
 
 詳細は各コマンドファイル（`.md`）を参照してください。
 

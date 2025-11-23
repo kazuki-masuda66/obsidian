@@ -53,6 +53,10 @@ PeruにおけるDAR (Demurrage and Detention) 処理の方法、CTIC discountの
 - **記録**: DAR番号を記録し、OPUSでの承認を確認
 - **フォローアップ**: 空コンテナの返却状況を確認
 
+## 🔗 関連リンク
+
+- [[../../../../../../.cursor/commands/dar.md]] - DAR業務支援コマンド（Cursor AI）
+
 ## 次アクション
 - [ ] DAR処理の標準プロセスを文書化
 - [ ] 承認権限の明確化

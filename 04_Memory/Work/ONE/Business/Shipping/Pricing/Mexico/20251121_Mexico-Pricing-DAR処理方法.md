@@ -233,9 +233,13 @@ Mexico PricingにおけるDAR（Demurrage and Detention）の処理方法、Waiv
 - 重要な顧客とは良好な関係を維持
 - 商業的な配慮と厳格な判断のバランスを取る
 
+## 🔗 関連リンク
+
+- [[20251121_Mexico-Pricing-基本ルールとTigerシステム]]
+- [[20251121_Mexico-Pricing-主要顧客別ルール]]
+- [[../../../../../../.cursor/commands/dar.md]] - DAR業務支援コマンド（Cursor AI）
+
 ## 次アクション
-- [ ] [[20251121_Mexico-Pricing-基本ルールとTigerシステム]]にリンク
-- [ ] [[20251121_Mexico-Pricing-主要顧客別ルール]]にリンク
 - [ ] 必要に応じてMemory Noteに変換（[[04_Memory/Work/ONE/Business/Shipping/]]）
 
 #mexico #pricing #dar #demurrage #detention #waiver #inbox

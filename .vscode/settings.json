@@ -1,0 +1,7 @@
+{
+  "// Windsurf用の設定": "このファイルはWindsurfとVS Codeの両方で使用されます",
+  
+  "// カスタムコマンドのパス": ".windsurf/commands/",
+  "// 使用方法": "AIチャットで /コマンド名 を入力すると、.windsurf/commands/[コマンド名].md が読み込まれます"
+}
+

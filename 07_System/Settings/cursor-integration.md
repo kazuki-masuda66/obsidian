@@ -21,6 +21,8 @@
 - `/organize-inbox` - Inbox整理
 - `/create-dashboards` - ダッシュボード作成
 - `/weekly-review` - 週次レビュー
+- `/pricing` - プライシング業務支援（詳細: [[../../.cursor/commands/pricing.md]]）
+- `/dar` - DAR業務支援（詳細: [[../../.cursor/commands/dar.md]]）
 
 ---
 
@@ -82,6 +84,8 @@ Cursorコマンドは `/コマンド名` の形式で実行します。
 - [[../Documentation/system-overview.md]] - システム概要
 - [[../../.cursor/commands/README.md]] - コマンド一覧
 - [[../../08_prompts/README.md]] - プロンプト集
+- [[../../.cursor/commands/pricing.md]] - プライシング業務支援ガイド
+- [[../../.cursor/commands/dar.md]] - DAR業務支援ガイド
 
 ---
 
